@@ -20,6 +20,50 @@ main {
     width: 960px;
     margin: auto;
 }
+
+#navbar ul{
+    display: none;
+    background-color: #f90;
+    position: absolute;
+    top: 100%;
+}
+
+#navbar li:hover ul { display: block; }
+
+#navbar, #navbar ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#navbar {
+    height: 30px;
+    background-color: #666;
+    padding-left: 25px;
+    min-width: 470px;
+}
+
+#navbar li {
+    float: left;
+    position: relative;
+    height: 100%;
+}
+
+#navbar li a {
+    display: block;
+    padding: 6px;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+#navbar ul li { float: none; }
+
+#navbar li:hover { background-color: #f90; }
+
+#navbar ul li:hover { background-color: #666; }
+
 .container {
     background: rgb(94, 191, 236);
     width: 70%;
@@ -43,27 +87,15 @@ p {
     margin: 50 50 50 50;
 }
 
-.menu {
+.marketing {
     width: 30%;
-    height: 453px;
+    height: 403px;
     background: rgb(180, 180, 180);
     float: right;
-}
-
-#navbar {
-    margin-top: 50;
-    padding: 0;
     text-align: center;
-    font-size: 20px;
-    list-style-type: none;
-    width: 100%;
-    color: rgb(7, 151, 247);
+    padding-top: 50;
 }
 
-li {
-    margin: 10;
-    color: rgb(7, 151, 247);
-}
 
 footer {
     width: 960px;
